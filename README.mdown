@@ -1,0 +1,40 @@
+# iBooks Social Widget
+
+This is a small HTML widget designed to make it easy to post to Twitter, Facebook, and Google+ from an iBook. It can be embedded in iBooks created with iBooks Author. The iBooks Social Widget is based on [Trevor Burnham's iBooks HTML Widget Boilerplate](https://github.com/TrevorBurnham/iBooks-HTML-Widget-Boilerplate)
+
+# Why? 
+
+Because the [Tweet button](https://dev.twitter.com/docs/tweet-button), [Like button](https://developers.facebook.com/docs/reference/plugins/like/), and [Google +1 button](http://www.google.com/+1/button/) don't work in an iBook out of the box. An iBook HTML widget will not load external JavaScript or an iframe, so the methods for sharing things on Twitter, Facebook, and Google+ that work for web sites won't work for an iBook. The iBooks Social Widget approach is based on sharing bookmarklets that submit what will be shared to special Twitter, Facebook, or Google+ URLs.
+
+The recommended approach for creating an HTML widget for iBooks Author is currently to create a Dashboard widget in Dashcode. This adds a lot of distracting cruft, and things that work fine in Dashcode have a tendency to stop working in iBooks. In short, it's better to treat an iBooks widget as a web page rather than as a Dashboard widget.
+
+# Usage
+
+1. Download or clone this repository. 
+
+2. Update the TODOs in `main.html` to share the content you want on Twitter, Facebook, and Google+.
+
+3. (Optional) Change the look & feel of things in `style.css`.
+
+4. Rename the entire directory to end in `.wdgt`:
+  `ibooks-social-widget` => `ibooks-social-widget.wdgt`
+
+5. Drag the `.wdgt` file into iBooks Author.
+
+## Preview image
+
+Notice that when you drag the `.wdgt` into iBooks Author, you just get a small preview image. iBooks doesn't load anything from your HTML widget other than `Default.png` until the user taps it. To show a different image, replace `Default.png`
+
+## Widget dimensions
+
+Open up `Info.plist` to set the appropriate width and height for your widget. When opened on the iPad, the widget will be scaled to fit the screen but will maintain the correct width/height proportion. Also note that 1px in your markup refers to 1px according to the `Info.plist` dimensions, *not* the actual pixels on the device screen.
+
+# License
+
+http://trevorburnham.mit-license.org/
+The included 3-clause **BSD license** (BSD_LICENSE.txt)
+
+# Contributors
+
+[Trevor Burnham](https://github.com/TrevorBurnham)
+[Arthur Klepchukov](https://github.com/avk)

@@ -1,0 +1,40 @@
+/* Put your styles here */
+
+body {
+  background: #333;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  padding: 50px;
+}
+
+a, a:active, a:visited {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 2px 3px #019ad2;
+}
+
+#wrapper {
+  border: 3px solid #444;
+  border-radius: 10px;
+  margin: 0 auto; 
+  padding: 10px;
+  width: 270px;
+}
+
+.twitter-share-button {
+  background: transparent url('img/bird.png') left center no-repeat;
+}
+.facebook-share-button {
+  background: transparent url('img/fb.png') left center no-repeat;
+}
+.google-share-button {
+  background: transparent url('img/gp.png') left center no-repeat;
+}
+.twitter-share-button,
+.facebook-share-button,
+.google-share-button {
+  display: block;
+  height: 48px;
+  padding: 19px 0 0 56px;
+}
